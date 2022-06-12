@@ -1,4 +1,4 @@
-package ClasesVacias;
+package EnumerativosYClasesDoubles;
 
 public enum Ranking {
 
@@ -30,5 +30,6 @@ public enum Ranking {
 			return false;
 		}
 	}
+	
 	
 }
