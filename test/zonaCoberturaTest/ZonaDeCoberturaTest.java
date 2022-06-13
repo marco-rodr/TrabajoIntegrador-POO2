@@ -31,6 +31,9 @@ public class ZonaDeCoberturaTest {
 		//Verify
 		assertSame(zona.getNombre(), "Bernal");
 	}
+	
+	
+	
 	/*
 	@Test
 	public void setEpicentroTest() {
