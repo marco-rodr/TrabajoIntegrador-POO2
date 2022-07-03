@@ -28,6 +28,7 @@ public class Ubicacion {
 		this.longitud = longitud;
 	}
 	
+	//Calcula la distancia entre dos ubicaciones
 	public float distancia(Ubicacion ubicacion) {
 		//El resultado es calculado en metros.
 		float resultado = this.distFrom(this.getLatitud(), 
@@ -50,6 +51,12 @@ public class Ubicacion {
 		return dist;
 	}
 	
+	/* 
+	 Retorna las ubicaciones que se encuentran a menos de cierto rango.
+	 + ubicaciones: List<Ubicacion> - Lista de ubicaciones que se quiere saber si estan en el rango.
+	 + distancia: float - Distancia maxima entre ubicaciones.
+	 + return: List<Ubicacion> - Lista de ubicaciones que estan en el rango.
+	 */
 	public List<Ubicacion> ubicacionesAMenosDe(List<Ubicacion> ubicaciones, float distancia){
 		List<Ubicacion> ubicacionesEnRango = new ArrayList<Ubicacion>();
 		for (Ubicacion ubicacion : ubicaciones) {
