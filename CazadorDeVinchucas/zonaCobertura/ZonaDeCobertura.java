@@ -1,5 +1,8 @@
 package zonaCobertura;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import ubicacion.Ubicacion;
 
 public class ZonaDeCobertura {

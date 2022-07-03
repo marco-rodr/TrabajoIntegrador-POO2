@@ -3,7 +3,7 @@ package organizacion;
 import ubicacion.Ubicacion;
 
 public class Organizacion {
-	private String TipoDeOrganizacion;
+	private TipoDeOrganizacion tipo;
 	private Ubicacion ubicacion;
 	private int trabajadores;
 	
@@ -20,12 +20,8 @@ public class Organizacion {
 		this.ubicacion = locacion;
 	}
 	
-	public String getTipoDeOrganizacion() {
-		return TipoDeOrganizacion;
-	}
-
-	public void setTipoDeOrganizacion(String tipoDeOrganizacion) {
-		TipoDeOrganizacion = tipoDeOrganizacion;
+	public TipoDeOrganizacion getTipoDeOrganizacion() {
+		return tipo;
 	}
 
 	public int getCantidadDeTrabajadores() {
