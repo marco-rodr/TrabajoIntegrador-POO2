@@ -6,13 +6,14 @@ import java.util.stream.Collectors;
 
 import EnumerativosYClasesDoubles.Ubicacion;
 import Muestra.Muestra;
+import zonaCobertura.ZonaDeCobertura;
 
 public class VinchucasWeb {
 	
 	private List<Muestra> muestras;
 	private List<Usuario> usuarios;
 	private List<Object> organizaciones;
-	private List<Object> zona; // zonaDeCoberturas agregar aca.
+	private List<ZonaDeCobertura> zona; // zonaDeCoberturas agregar aca.
 	
 	
 	public VinchucasWeb() {

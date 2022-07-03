@@ -1,6 +1,5 @@
 package zonaCobertura;
 
-import ubicacion.Ubicacion;
 
 public class ZonaDeCobertura {
 	private String nombre;

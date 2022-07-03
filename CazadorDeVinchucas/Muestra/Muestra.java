@@ -8,14 +8,14 @@ import java.util.Map;
 
 import EnumerativosYClasesDoubles.Ranking;
 import EnumerativosYClasesDoubles.TipoDeMuestra;
-import EnumerativosYClasesDoubles.Ubicacion;
+
 import Opinion.Opinion;
 
 public class Muestra {
 	
 	private TipoDeMuestra vinchucaEncontrada; // colaborador inutil
 	private String fotografiaVinchucaEncontrada; // colaborador inutil
-	private Ubicacion ubicacion;
+	private entity.Ubicacion ubicacion;
 	private Date fechaCreacion;
 	private Integer ID_Muestra;
 	private ArrayList<Opinion> Opiniones;
