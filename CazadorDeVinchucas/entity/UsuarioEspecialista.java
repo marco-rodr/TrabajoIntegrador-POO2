@@ -6,8 +6,8 @@ import Muestra.Muestra;
 
 public class UsuarioEspecialista extends Usuario {
 
-	public UsuarioEspecialista(List<Verificacion> verificaciones, List<Muestra> muestras, String alias) {
-		super(verificaciones, muestras, alias);
+	public UsuarioEspecialista( String alias) {
+		super(alias);
 		
 	}
 

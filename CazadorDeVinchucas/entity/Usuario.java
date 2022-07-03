@@ -1,23 +1,25 @@
 package entity;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
 import Muestra.Muestra;
 
+
 public class Usuario {
 	
-	protected String alias;
+	private String alias;
 	private List<Verificacion> verificaciones;
 	private List<Muestra> muestras;
 	
 	
-	public Usuario(List<Verificacion> verificaciones, List<Muestra> muestras, String alias) {
+	public Usuario(String alias) {
 		super();
 		this.alias = alias;
-		this.verificaciones = verificaciones;
-		this.muestras = muestras;
+		this.verificaciones = new ArrayList<Verificacion>();
+		this.muestras = new ArrayList<Muestra>();
 	}
 
 	public int muestrasDelMes() {
