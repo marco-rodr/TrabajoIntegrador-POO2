@@ -8,7 +8,6 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-import junit.framework.Assert;
 import ubicacion.Ubicacion;
 
 public class UbicacionTest {
