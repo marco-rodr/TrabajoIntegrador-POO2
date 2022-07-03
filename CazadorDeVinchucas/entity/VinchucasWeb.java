@@ -2,6 +2,7 @@ package entity;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import EnumerativosYClasesDoubles.Ubicacion;
 import Muestra.Muestra;
@@ -60,6 +61,13 @@ public class VinchucasWeb {
 		this.zona.add(zona);
 		return zona;
 	}
+	
+	/*public List<Muestra> muestrasCercanas(Muestra muestra, double dist) {
+		Ubicacion ubicacion1 = muestra.getUbicacion();
+		return (ArrayList<Muestra>)this.muestras.stream()
+				.filter(m -> ubicacion1.distanciaCon(m.getUbicacion()) <= dist)
+				.collect(Collectors.toList());
+	}*/
 	
 	//Getters y Setters
 	public List<Muestra> getMuestras() {
