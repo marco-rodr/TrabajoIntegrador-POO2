@@ -1,4 +1,4 @@
-package zonaCobertura;
+package organizacion;
 
 import java.util.ArrayList;
 import java.util.List;

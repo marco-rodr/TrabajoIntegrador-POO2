@@ -3,7 +3,6 @@ package organizacion;
 import java.util.List;
 
 import ubicacion.Ubicacion;
-import zonaCobertura.ZonaDeCobertura;
 
 public class Organizacion {
 	private TipoDeOrganizacion tipo;

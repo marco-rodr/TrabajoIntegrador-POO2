@@ -2,7 +2,7 @@ package zonaCoberturaTest;
 
 import static org.junit.Assert.*;
 
-import zonaCobertura.ZonaDeCobertura;
+import organizacion.ZonaDeCobertura;
 
 import java.util.ArrayList;
 import java.util.List;
