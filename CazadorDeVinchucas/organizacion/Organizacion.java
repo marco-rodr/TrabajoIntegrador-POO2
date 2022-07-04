@@ -4,13 +4,15 @@ import java.util.List;
 
 import Muestra.Muestra;
 import ubicacion.Ubicacion;
+import funcionalidadExterna.FuncionalidadExterna;
 
 public class Organizacion implements ObservadorZona {
 	private TipoDeOrganizacion tipo;
 	private Ubicacion ubicacion;
 	private int trabajadores;
 	private List<ZonaDeCobertura> zonasDeCobertura;
-	private FuncionalidadExterna
+	private FuncionalidadExterna funcionMuestraSubida;
+	private FuncionalidadExterna funcionMuestraVerificada;
 	
 	public Organizacion(Ubicacion locacion, int cantidadDeTrabajadores, List<ZonaDeCobertura> zonas) {
 		this.setUbicacion(locacion);
