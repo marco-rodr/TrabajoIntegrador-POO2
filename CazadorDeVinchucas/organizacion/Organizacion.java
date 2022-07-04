@@ -4,7 +4,7 @@ import java.util.List;
 
 import ubicacion.Ubicacion;
 
-public class Organizacion {
+public class Organizacion implements ObservadorZona {
 	private TipoDeOrganizacion tipo;
 	private Ubicacion ubicacion;
 	private int trabajadores;
@@ -13,7 +13,7 @@ public class Organizacion {
 	public Organizacion(Ubicacion locacion, int cantidadDeTrabajadores, List<ZonaDeCobertura> zonas) {
 		this.setUbicacion(locacion);
 		this.setTrabajadores(cantidadDeTrabajadores);
-		this.setZonasDeCobertura(zonas);
+		this.zonasDeCobertura = zonas;
 	}
 	
 	public TipoDeOrganizacion getTipoDeOrganizacion() {
@@ -39,17 +39,15 @@ public class Organizacion {
 	public List<ZonaDeCobertura> getZonasDeCobertura() {
 		return zonasDeCobertura;
 	}
-
-	public void setZonasDeCobertura(List<ZonaDeCobertura> zonas) {
-		this.zonasDeCobertura = zonas;
-	}
 	
 	public void agregarZona(ZonaDeCobertura zona) {
 		this.zonasDeCobertura.add(zona);
+		zona.agregarObservador(this);
 	}
 	
 	public void sacarZona(ZonaDeCobertura zona) {
 		this.zonasDeCobertura.remove(zona);
+		zona.sacarObservador(this);
 	}
 	
 }
