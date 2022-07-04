@@ -1,4 +1,6 @@
-package zonaCobertura;
+package entity;
+
+
 
 
 public class ZonaDeCobertura {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import EnumerativosYClasesDoubles.Ubicacion;
+
 import Muestra.Muestra;
 
 
@@ -21,7 +21,7 @@ public class VinchucasWeb {
 		this.muestras = new ArrayList<Muestra>();
 		this.usuarios = new ArrayList<Usuario>();
 		this.organizaciones = new ArrayList<Object>(); //agregar Organizacion
-		this.zona = new ArrayList<Object>(); // agregar ZonaDeCobertura
+		this.zona = new ArrayList<ZonaDeCobertura>(); // agregar ZonaDeCobertura
 	}
 	
 	
@@ -57,18 +57,18 @@ public class VinchucasWeb {
 	 * @param radio:Double que representa el radio de cobertura
 	 * @return ZonaDeCobertura zona creada.
 	 * */
-	public Object registrarZonaDeCobertura(String nombre, Ubicacion epicentro, Double radio) {
-		Object zona = new Object(); // se debe agregar ZonaDeCobertura
+	public ZonaDeCobertura registrarZonaDeCobertura(String nombre, Ubicacion epicentro, Float radio) {
+		ZonaDeCobertura zona = new ZonaDeCobertura(nombre, radio, radio, radio); // se debe agregar ZonaDeCobertura
 		this.zona.add(zona);
 		return zona;
 	}
 	
-	/*public List<Muestra> muestrasCercanas(Muestra muestra, double dist) {
+	public List<Muestra> muestrasCercanas(Muestra muestra, double dist) {
 		Ubicacion ubicacion1 = muestra.getUbicacion();
 		return (ArrayList<Muestra>)this.muestras.stream()
-				.filter(m -> ubicacion1.distanciaCon(m.getUbicacion()) <= dist)
+				.filter(m -> ubicacion1.distancia(m.getUbicacion()) <= dist)
 				.collect(Collectors.toList());
-	}*/
+	}
 	
 	//Getters y Setters
 	public List<Muestra> getMuestras() {
@@ -101,12 +101,12 @@ public class VinchucasWeb {
 	}
 
 
-	public List<Object> getZona() {
+	public List<ZonaDeCobertura> getZona() {
 		return zona;
 	}
 
 
-	public void setZona(List<Object> zona) {
+	public void setZona(List<ZonaDeCobertura> zona) {
 		this.zona = zona;
 	}
 	

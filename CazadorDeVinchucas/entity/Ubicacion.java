@@ -37,7 +37,7 @@ public class Ubicacion {
 		return resultado;
 	}
 	
-	private float distFrom(float lat1, float lng1, float lat2, float lng2) {
+	public float distFrom(float lat1, float lng1, float lat2, float lng2) {
 		/*Fuente: https://www.iteramos.com/pregunta/26930/calcular-la-distancia-en-metros-cuando-se-conoce-la-longitud-y-latitud-en-java*/
 		double earthRadius = 6371; //kilometers 
 		double dLat = Math.toRadians(lat2-lat1); 

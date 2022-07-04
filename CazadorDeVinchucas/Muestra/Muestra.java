@@ -10,12 +10,13 @@ import EnumerativosYClasesDoubles.Ranking;
 import EnumerativosYClasesDoubles.TipoDeMuestra;
 
 import Opinion.Opinion;
+import entity.Ubicacion;
 
 public class Muestra {
 	
 	private TipoDeMuestra vinchucaEncontrada; // colaborador inutil
 	private String fotografiaVinchucaEncontrada; // colaborador inutil
-	private entity.Ubicacion ubicacion;
+	private Ubicacion ubicacion;
 	private Date fechaCreacion;
 	private Integer ID_Muestra;
 	private ArrayList<Opinion> Opiniones;
@@ -221,7 +222,7 @@ public class Muestra {
 	private void setFotografiaVinchucaEncontrada(String fotografiaVinchucaEncontrada) {
 		this.fotografiaVinchucaEncontrada = fotografiaVinchucaEncontrada; }
 
-	private Ubicacion getUbicacion() {
+	public Ubicacion getUbicacion() {
 		return ubicacion; }
 
 	private void setUbicacion(Ubicacion ubicacion) {
