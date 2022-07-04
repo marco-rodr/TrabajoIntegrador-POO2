@@ -15,7 +15,9 @@ public class ZonaDeCobertura {
 		this.setNombre(nombre);
 		this.setEpicentro(latitud, longitud);
 		this.setRadio(radio);
+		this.observadores = new ArrayList<>();
 	}
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -49,7 +51,6 @@ public class ZonaDeCobertura {
 	public void sacarObservador(ObservadorZona observador) {
 		this.observadores.remove(observador);
 	}
-	
 	
 	public boolean seSolapan(ZonaDeCobertura zona) {
 		return (this.radio + zona.radio >= 

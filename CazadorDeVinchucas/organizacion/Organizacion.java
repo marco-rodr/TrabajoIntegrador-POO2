@@ -2,6 +2,7 @@ package organizacion;
 
 import java.util.List;
 
+import Muestra.Muestra;
 import ubicacion.Ubicacion;
 
 public class Organizacion implements ObservadorZona {
@@ -9,6 +10,7 @@ public class Organizacion implements ObservadorZona {
 	private Ubicacion ubicacion;
 	private int trabajadores;
 	private List<ZonaDeCobertura> zonasDeCobertura;
+	private FuncionalidadExterna
 	
 	public Organizacion(Ubicacion locacion, int cantidadDeTrabajadores, List<ZonaDeCobertura> zonas) {
 		this.setUbicacion(locacion);
@@ -48,6 +50,18 @@ public class Organizacion implements ObservadorZona {
 	public void sacarZona(ZonaDeCobertura zona) {
 		this.zonasDeCobertura.remove(zona);
 		zona.sacarObservador(this);
+	}
+
+	@Override
+	public void muestraSubida (ZonaDeCobertura zona, Muestra muestra) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void muestraVerificada(ZonaDeCobertura zona, Muestra muestra) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }
